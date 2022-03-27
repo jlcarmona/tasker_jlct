@@ -1,0 +1,8 @@
+.settings
+.classpath
+.project
+.dockerignore
+.git
+.gitignore
+Dockerfile.dev
+Dockerfile.prod

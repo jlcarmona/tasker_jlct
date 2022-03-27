@@ -1,0 +1,44 @@
+.buttonContanier{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-top: 20px;
+}
+
+.buttonTask{
+    margin-left: 10px;
+    padding: 2% 3% 2% 3%;
+    border-radius: 2px;
+    border: 1px solid lightgray;
+}
+
+.fieldsContainer{
+    display:flex;
+    flex-direction: column;
+}
+.taskField{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+}
+#name{
+    width:100%;
+    padding: 5px 0px 5px 5px;
+}
+.formError{
+    color: darkred;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+#taskDate{
+    width: 35%;
+    text-align: center;
+    padding: 5px 0px 5px 5px;
+}
+label{
+    width: 40%;
+    padding: 5px 0px 5px 5px;
+    color: darkcyan;
+}

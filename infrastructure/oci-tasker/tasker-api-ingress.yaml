@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tasker-api
+spec:
+  selector:
+    matchLabels:
+      app: tasker-api
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: tasker-api
+    spec:
+      containers:
+      - name: task
+        image: eu-amsterdam-1.ocir.io/axqin7boizx0/tasker-api:latest
+        ports:
+        - containerPort: 8080
+        imagePullPolicy: Always
+      imagePullSecrets:
+        - name: secretokejl
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: tasker-api-svc
+spec:
+  selector:
+    app: tasker-api
+  ports:
+    - port: 8080
+      targetPort: 8080
+  type: ClusterIP

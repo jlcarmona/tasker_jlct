@@ -1,0 +1,9 @@
+.vscode
+build
+coverage
+node_modules
+.dockerignore
+.git
+.gitignore
+Dockerfile
+Dockerfile.prod
