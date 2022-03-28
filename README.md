@@ -27,7 +27,6 @@ The Tasker Application is developed and supported by Jose Luis Carmona.
     ├───infrastructure
     ├───tasker-api
     ├───tasker-app
-    └───README.md
 ```
 * docs : folder with documentation about tasker 
 * infrastructure : folder which includes Dockerfile and dockerignore files to create the docker images
